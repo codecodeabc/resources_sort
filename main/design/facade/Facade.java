@@ -1,8 +1,8 @@
 package design.facade;
 
-import com.cpp.project.test.design.facade.system.SystemA;
-import com.cpp.project.test.design.facade.system.SystemB;
-import com.cpp.project.test.design.facade.system.SystemC;
+import design.facade.system.SystemA;
+import design.facade.system.SystemB;
+import design.facade.system.SystemC;
 
 /**
  * 基金经理
