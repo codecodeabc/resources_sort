@@ -91,6 +91,7 @@ public class ParititionsLables {
      *     public List<Integer> partitionLabels(String S) {
      *         int[] last = new int[26];
      *         int length = S.length();
+     *         //记录字符最后出现的位置为 i
      *         for (int i = 0; i < length; i++) {
      *             last[S.charAt(i) - 'a'] = i;
      *         }
@@ -98,6 +99,7 @@ public class ParititionsLables {
      *         int start = 0, end = 0;
      *         for (int i = 0; i < length; i++) {
      *             end = Math.max(end, last[S.charAt(i) - 'a']);
+     *             //同理区域最后一个值刚好是这个区域字符最后出现的位置，则划分区域
      *             if (i == end) {
      *                 partition.add(end - start + 1);
      *                 start = end + 1;
