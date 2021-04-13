@@ -15,9 +15,12 @@ public class SleepInterrupt {
                     TimeUnit.SECONDS.sleep(1000);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
+                    // 中断被捕获后，中断标志被设置为false
+                    System.out.println("中断被捕获后状态"+this.isInterrupted());
                     this.interrupt();
                 }
                 if(this.isInterrupted()){
+                    System.out.println(this.isInterrupted());
                     break;
                 }
             }
@@ -28,6 +31,7 @@ public class SleepInterrupt {
         T t = new T();
         t.start();
         TimeUnit.SECONDS.sleep(3);
+        //中断后中断标志位 true
         t.interrupt();
     }
 }
