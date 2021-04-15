@@ -1,0 +1,16 @@
+
+c
+java:S2142)"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Š¯ °‹/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(”³èñ8Š¯ °‹/
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(€Ûü…ÿÿÿÿÿ8Âˆ¢°‹/
+W
+java:S2274":Remove this call to "wait" or move it into a "while" loop.(ŒºÙ8À‰°‹/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(œ³¬ö8«É™°‹/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(”³èñ8ßˆ„°‹/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(Óüüµ8ˆ¦†°‹/
+U	java:S106""9Replace this use of System.out or System.err by a logger.(Óüüµ8Š¯ °‹/
+M
+java:S2446$"0"notify" may not wake up the appropriate thread.(ŒâÌ†8çß¡°‹/
+U	java:S106-"9Replace this use of System.out or System.err by a logger.(œ³¬ö8Š¯ °‹/
+c
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8À‰°‹/

@@ -1,0 +1,11 @@
+
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(’ØÏøÿÿÿÿ8ÁÒÉ´‹/
+c
+java:S2142P"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Éîâ´‹/
+[
+java:S11550">Use isEmpty() to check whether the collection is empty or not.(§ŒÍ‚8ÙåĞ´‹/
+I
+java:S1481O",Remove this unused "dequeue" local variable.(ÿï¡²8Éîâ´‹/
+c
+java:S2142F"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8¥Ââ´‹/
+Z	java:S1065"9Replace this use of System.out or System.err by a logger.(­€ñüüÿÿÿÿ8„Ï´‹/

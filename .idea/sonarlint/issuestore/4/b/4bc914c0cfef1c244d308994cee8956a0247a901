@@ -1,0 +1,9 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¡ìºşøÿÿÿÿ
+i
+java:S1450	"SRemove the "test" field and declare it as a local variable in the relevant methods.(ãë¢•
+—
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(½¯¬·
+C	java:S108")Either remove or fill this block of code.(Ëƒ¡ııÿÿÿÿ
+>
+java:S1068	"(Remove this unused "test" private field.(ãë¢•

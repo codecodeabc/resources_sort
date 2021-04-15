@@ -1,0 +1,11 @@
+
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(àâ§şÿÿÿÿ8Û–´‹/
+c
+java:S2142"FEither re-interrupt this method or rethrow the "InterruptedException".(ä ¹€8Û–´‹/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(™‚½ÿÿÿÿÿ8Û–´‹/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(×•¿â8Û–´‹/
+b
+java:S2274"@Remove this call to "awaitNanos" or move it into a "while" loop.(š¥ß»ıÿÿÿÿ8ÄÈ˜´‹/
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(‹˜İ½úÿÿÿÿ8Û–´‹/
+“
+java:S1130""wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(º™Ú78×ñ–´‹/
