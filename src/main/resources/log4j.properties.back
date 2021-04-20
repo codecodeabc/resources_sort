@@ -1,0 +1,28 @@
+#一、设置日志级别
+#日志级别大小比较 error > warn > info > debug, 设置一个日志级别时，级别大于等于所设置的级别的日志都会打印
+#如：设置日志级别为debug，那么info、warn、error都会打印
+#日志级别debug，定义变量C，I,W,E
+log4j.rootLogger=debug, C, I, W
+
+#二、输出日志到控制台
+log4j.appender.C=org.apache.log4j.ConsoleAppender
+log4j.appender.C.Target=System.out
+log4j.appender.C.layout=org.apache.log4j.PatternLayout
+# %-5p 的 5 是输出字符串的长度
+log4j.appender.C.layout.ConversionPattern=[%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l---%m%n
+
+#三、每日产生info.log一个文件, 记录info级别以上的日志
+log4j.appender.I=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.I.File=./logs/info.log
+log4j.appender.I.layout=org.apache.log4j.PatternLayout
+log4j.appender.I.Append=true
+log4j.appender.I.Threshold=info
+log4j.appender.I.layout.ConversionPattern=[%-1p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l---m%n
+
+#四、每日产生warn.log一个文件, 记录warn级别以上的日志
+log4j.appender.W=org.apache.log4j.DailyRollingFileAppender
+log4j.appender.W.File=./logs/warn.log
+log4j.appender.W.layout=org.apache.log4j.PatternLayout
+log4j.appender.W.Append=true
+log4j.appender.W.Threshold=warn
+log4j.appender.W.layout.ConversionPattern=[%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l---%m%n
