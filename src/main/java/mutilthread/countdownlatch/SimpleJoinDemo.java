@@ -1,7 +1,6 @@
 package mutilthread.countdownlatch;
 
 
-import mutilthread.semaphore.SemaphoreReleaseRightDemo;
 
 import java.util.concurrent.TimeUnit;
 
