@@ -44,39 +44,59 @@ public class buildTree {
         if (preorder.length == 0) {
             return null;
         }
+        /**
+         * 单节点树
+         */
+        if(preorder.length == 1){
+            return new TreeNode(preorder[0]);
+        }
         TreeNode root = new TreeNode(preorder[0]);
-        int rootIndex = 0;
+        int prootIndex = 0;
+        int irootIndex = 0;
         int index = 0;
         for (int i = 0; i < inorder.length; i++) {
             if (inorder[i] == preorder[0]) {
-                index = inorder[i];
+                // 中序遍历列表 根节点下表
+                index = i;
             }
         }
-        root.left = rebuildTree(preorder, inorder, rootIndex, rootIndex + index, rootIndex, index);
-        root.right = rebuildTree(preorder, inorder, rootIndex + index + 1, preorder.length, index+1, inorder.length);
+        int llen = index - 0;
+        root.left = rebuildTree(preorder, inorder, prootIndex + 1, prootIndex + llen, irootIndex, irootIndex + llen - 1);
+        root.right = rebuildTree(preorder, inorder, prootIndex + llen +1 , preorder.length - 1, irootIndex + llen + 1, inorder.length - 1);
         return root;
     }
 
     private static TreeNode rebuildTree(int[] preorder, int[] inorder, int pleft, int pright, int ileft, int iright) {
-        if (ileft == iright-1) {
-            return new TreeNode(inorder[ileft]);
+        if (pleft == pright) {
+            return new TreeNode(preorder[pleft]);
         }
-        int rootIndex = pleft;
-        TreeNode root = new TreeNode(preorder[rootIndex]);
+        /**
+         * 判断没有子树的情况
+         */
+        if(pleft > pright || ileft > iright){
+            return null;
+        }
+        int prootIndex = pleft;
+        int irootIndex = ileft;
         int index = ileft;
-        for (int i = 0; i < iright ; i++) {
-            if (inorder[i] == preorder[0]) {
-                index = inorder[i];
+        for (int i = ileft; i <= iright; i++) {
+            if (inorder[i] == preorder[pleft]) {
+                // 中序遍历列表 根节点下表
+                index = i;
             }
         }
-        root.left = rebuildTree(preorder, inorder, rootIndex, rootIndex + index, rootIndex, index);
-        root.right = rebuildTree(preorder, inorder, rootIndex + index + 1, preorder.length, index+1, inorder.length);
+        TreeNode root = new TreeNode(preorder[pleft]);
+        int llen = index - ileft;
+        root.left = rebuildTree(preorder, inorder, prootIndex + 1, prootIndex + llen, irootIndex, irootIndex + llen - 1);
+        root.right = rebuildTree(preorder, inorder, prootIndex + llen +1 , pright, irootIndex + llen + 1, iright);
         return root;
     }
 
     public static void main(String[] args) {
-        int[] preorder = new int[]{3, 9, 20, 15, 7};
-        int[] inorder = new int[]{9, 3, 15, 20, 7};
+        /*int[] preorder = new int[]{3, 9, 20, 15, 7};
+        int[] inorder = new int[]{9, 3, 15, 20, 7};*/
+        int[] preorder = new int[]{1,2};
+        int[] inorder = new int[]{2,1};
         TreeNode treeNode = buildTree(preorder, inorder);
         System.out.println(treeNode);
     }
