@@ -29,6 +29,7 @@ package leetcode.swordtooffer;
 public class CutRope {
 
     public int cuttingRope(int n) {
+
         return 0;
     }
 }
