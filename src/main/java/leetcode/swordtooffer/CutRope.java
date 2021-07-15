@@ -83,7 +83,23 @@ public class CutRope {
         return ints[n];
     }
 
+    /**
+     * 解法2
+     */
+    public static int cuttingRope2(int n) {
+        // 小于 4 的 都为 n - 1 剪一次
+        if (n < 4) return n - 1;
+        int res = 1;
+        // 大于4 的 尽可能的 剪出 3 来
+        while (n > 4) {
+            res *= 3;
+            n -= 3;
+        }
+        if (n == 4) return res << 2;
+        return res * n;
+    }
+
     public static void main(String[] args) {
-        System.out.println(cuttingRope(5));
+        System.out.println(cuttingRope2(4));
     }
 }
