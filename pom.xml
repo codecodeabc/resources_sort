@@ -97,6 +97,15 @@
             <version>4.1.63.Final</version>
         </dependency>
 
+
+        <!--cglib - 使用字节码库实现动态代理-->
+        <!-- https://mvnrepository.com/artifact/cglib/cglib -->
+        <dependency>
+            <groupId>cglib</groupId>
+            <artifactId>cglib</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
     </dependencies>
 
 
