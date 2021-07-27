@@ -123,6 +123,22 @@
             </LeetcodeEditor>
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 16]数值的整数次方.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 16]数值的整数次方.java" />
+              <option name="questionId" value="100295" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 17]打印从1到最大的n位数.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 17]打印从1到最大的n位数.java" />
+              <option name="questionId" value="100296" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 20]表示数值的字符串.java">
           <value>
             <LeetcodeEditor>
@@ -136,6 +152,14 @@
             <LeetcodeEditor>
               <option name="path" value="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 21]调整数组顺序使奇数位于偶数前面.java" />
               <option name="questionId" value="100291" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 22]链表中倒数第k个节点.java">
+          <value>
+            <LeetcodeEditor>
+              <option name="path" value="$PROJECT_DIR$/leetcode/leetcodeTemp/leetcode/editor/cn/[剑指 Offer 22]链表中倒数第k个节点.java" />
+              <option name="questionId" value="100294" />
             </LeetcodeEditor>
           </value>
         </entry>
