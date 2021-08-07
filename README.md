@@ -3,21 +3,25 @@
 
 #### 一 、代码模块
 
-design - 设计模式
 
-leetcode  - 算法刷题
+##### 1.java相关知识点 
 
-mutilthread - 多线程相关案例
+    knowledge.mutilthread - 多线程相关案例
+    
+    knowledge.ssl - java ssl加密层案例
 
-distributedLock -  分布式锁
+    knowledge.javaapi - java相关api应用
 
-logFrame - 日志框架
+##### 2.design - 设计模式
 
-redis - redis应用
+##### 3.leetcode  - 算法刷题
 
-ssl - java ssl加密层案例
+##### 4.distributedLock -  分布式锁
 
-javaapi - java相关api应用
+##### 5.logFrame - 日志框架
 
-#### 知识网络
+##### 6.redis - redis应用
+
+
+##### 知识网络
 相关知识资料整理
